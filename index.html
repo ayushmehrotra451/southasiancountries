@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="testcss.css" />
+    <title>South Asia Country Corporation</title>
+  </head>
+  <body>
+    <div id="popup">
+      <h2>Word of the Day</h2>
+      <p id="word"></p>
+      <button onclick="closePopup()">Close</button>
+  </div>
+
+  <script>
+      var words = ["India", "Nepal", "Pakistan", "Afghanistan", "Sri Lanka", "Bhutan", "South Asia", "Culture", "Political Map", "Landlocked"];
+
+      function generateRandomWord() {
+          return words[Math.floor(Math.random() * words.length)];
+      }
+
+      function showPopup() {
+          var popup = document.getElementById("popup");
+          var word = generateRandomWord();
+          document.getElementById("word").textContent = word;
+          popup.style.display = "block";
+      }
+
+      function closePopup() {
+          var popup = document.getElementById("popup");
+          popup.style.display = "none";
+      }
+
+      window.onload = function() {
+          showPopup();
+      };   </script>
+    <header class="header">
+        <a href="#">
+            <img class="logo" alt="logo" src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\logo.png"/>
+          </a>
+      
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#country-box">Countries</a></li>
+          <li><a class="main-nav-link" href="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\learnpage.html" target="_blank">Learning Page</a></li>
+          
+          <li><a class="main-nav-link" href="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\contactus.html" target="_blank">Contact Us</a></li>
+          <li><a class="main-nav-link" href="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\sacc-login.html" target="_blank">Login</a></li>
+          
+          <li><a class="main-nav-link nav-cta" href="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\sacc-signup.html" target="_blank">Join Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="company-profile">
+      <h2>Company Profile & Introduction Page</h2>
+      
+        <img class="intrologo" src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\logo.png" style="object-fit: scale-down;">
+      
+      
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\gallerygrid1.jpeg">
+        </figure>
+        <figure class="gallery-item">
+          <img src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\gallerygrid2.jpg">
+        </figure>
+        <figure class="gallery-item">
+          <img src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\gallerygrid3.jpeg">
+        </figure>
+        <figure class="gallery-item">
+          <img src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\gallerygrid4.jpg">
+        </figure>
+        <figure class="gallery-item">
+          <img src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\gallerygrid5.jpg">
+        </figure>
+        <figure class="gallery-item">
+          <img src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\gallerygrid6.jpeg">
+        </figure>
+        <figure class="gallery-item">
+          <img src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\gallerygrid7.jpg">
+        </figure>
+        <figure class="gallery-item">
+          <img src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\gallerygrid8.jpeg">
+        </figure>
+        <figure class="gallery-item">
+          <img src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\gallerygrid9.jpg">
+        </figure>
+        
+      </div>
+      <h3 style="color: #cf711f; margin-top: 20px;" >Introduction:</h3>
+      <p style="letter-spacing: 1px; padding-bottom: 20px;">
+        South Asia is the southern subregion of Asia which is defined in both
+        geographical and ethnic-culutral terms. Topographically, it is dominated
+        by the Indian Subcontinent and is bounded by the Indian Ocean in the
+        south, and the Himalayas, Karakoram, and Pamir Mountains in the north.
+        The South Asian Association for Regional Cooperation (SAARC) is an
+        economic cooperation organization in the region which was established in
+        1985 and includes all eight nations comprising South Asia. The core
+        countries of South Asia have a total area of 4.4 million km2 (1.7
+        million sq mi), which is 10% of the Asian continent. The population of
+        the region, under the broader definition, is about 1.9 billion or about
+        one-fourth of the world's population, making it both the most populous
+        and the most densely populated geographical region in the world.
+      </p>
+    </article>
+    </div>
+    <div class="container" id="country-box">
+      <section>
+        <h2 style="color: #cf711f; margin-bottom: 30px;" >Countries</h2>
+        <div class="grid-3-cols">
+          <figure class="country-card">
+            <img class="countryPicture"
+              src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\afghanistanflag.jpg"
+              alt="Chair"
+            />
+            <div class="country-box">
+              <h3>Afghanistan</h3>
+              <ul class="country-details">
+                <li>
+                  
+                  <span><strong>Location</strong> - Iran to the west and Pakistan to the East</span>
+                </li>
+                <li>
+                  <span><strong>Leader</strong> - Hibatullah Akhundzada</span>
+                </li>
+                <li>
+                  <span><strong>Capital</strong> - Kabul</span>
+                </li>
+                <li>
+                  <span><strong>Tourist Spots</strong> - Babur Tomb, Minaret of Jam, Kabul Museum, Green Mosque</span>
+                </li>
+              </ul>
+              <div class="country-readmore">
+                
+                <a href="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\learnpage.html" target="_blank" class="btn btn--small">Read More</a>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="country-card">
+            <img class="countryPicture"
+              src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\bangladeshflag.jpg"
+              alt="Chair"
+            />
+            <div class="country-box">
+              <h3>Bangladesh</h3>
+              <ul class="country-details">
+                <li>
+                  <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                  <span><strong>Location</strong>-East of Indian Bay of Bengal with the Sunderbands to the south</span>
+                </li>
+                <li>
+                  <span><strong>Leader</strong>-Sheikh Hasina</span>
+                </li>
+                <li>
+                  <span><strong>Capital</strong>-Dhaka</span>
+                </li>
+                <li>
+                  <span><strong>Tourist Spots</strong>- Sunderbands, Central Shaheed Minar, Ramna Park, Ahsan Manzil Museum</span>
+                </li>
+              </ul>
+              <div class="country-readmore">
+                
+                <a href="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\learnpage.html" target="_blank" class="btn btn--small">Read More</a>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="country-card">
+            <img class="countryPicture"
+              src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\bhutanflag.jpg"
+              alt="Chair"
+            />
+            <div class="country-box">
+                <h3>Bhutan</h3>
+                <ul class="country-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><strong>Location</strong> - Himalayan region between Tibet and India</span>
+                  </li>
+                  <li>
+                    <span><strong>Leader</strong> - Lotay Tshering</span>
+                  </li>
+                  <li>
+                    <span><strong>Capital</strong> - Thimpu</span>
+                  </li>
+                  <li>
+                    <span><strong>Tourist Spots</strong> - Punakha Dzong, Paro Taktsang, Buddha Dordenma, Phobjikha Valley</span>
+                  </li>
+                </ul>
+                <div class="country-readmore">
+                  
+                  <a href="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\learnpage.html" target="_blank" class="btn btn--small">Read More</a>
+                </div>
+              </div> 
+          </figure>
+
+          <figure class="country-card">
+            <img class="countryPicture"
+              src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\indiaflag.jpg"
+              alt="Chair"
+            />
+            <div class="country-box">
+                <h3>India</h3>
+                <ul class="country-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><strong>Location</strong>- Shares its borders with seven countries and has the Indian ocean to its south</span>
+                  </li>
+                  <li>
+                    <span><strong>Leader</strong>- Narendra Modi</span>
+                  </li>
+                  <li>
+                    <span><strong>Capital</strong>- New Delhi</span>
+                  </li>
+                  <li>
+                    <span><strong>Tourist Spots</strong> - Taj Mahal, Red Fort, Ajanta Caves, Meenakshi Temple</span>
+                  </li>
+                </ul>
+                <div class="country-readmore">
+                  
+                  <a href="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\learnpage.html" target="_blank" class="btn btn--small">Read More</a>
+                </div>
+              </div>
+          </figure>
+
+          <figure class="country-card">
+            <img class="countryPicture"
+              src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\maldivesflag.jpg"
+              alt="Chair"
+            />
+            <div class="country-box">
+                <h3>Maldives</h3>
+                <ul class="country-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><strong>Location</strong> - Southwest of India and Sri Lanka</span>
+                  </li>
+                  <li>
+                    <span><strong>Leader</strong> - Mohamed Muizzu</span>
+                  </li>
+                  <li>
+                    <span><strong>Capital</strong> - Male</span>
+                  </li>
+                  <li>
+                    <span><strong>Tourist Spots</strong> - Banana Reefs, Grand Friday Mosque, Veligandu Island Beach, Hukuru Miskly</span>
+                  </li>
+                </ul>
+                <div class="country-readmore">
+                  
+                  <a href="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\learnpage.html" target="_blank" class="btn btn--small">Read More</a>
+                </div>
+              </div>            
+          </figure>
+
+          <figure class="country-card">
+            <img class="countryPicture"
+              src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\nepalflag.jpg"
+              alt="Chair"
+            />
+            <div class="country-box">
+                <h3>Nepal</h3>
+                <ul class="country-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><strong>Location</strong> - Between India and Sri Lanka</span>
+                  </li>
+                  <li>
+                    <span><strong>Leader </strong> - Ram Chandra Poudel</span>
+                  </li>
+                  <li>
+                    <span><strong>Capital</strong> - Kathmandu</span>
+                  </li>
+                  <li>
+                    <span><strong>Tourist Spots</strong>- Pashupatinath Temple, Buddha Stupa,  Chitwan National Park</span>
+                  </li>
+                </ul>
+                <div class="country-readmore">
+                  
+                  <a href="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\learnpage.html" target="_blank" class="btn btn--small">Read More</a>
+                </div>
+              </div>
+          </figure>
+
+          <figure class="country-card">
+            <img class="countryPicture"
+              src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\pakistanflag.jpeg"
+              alt="Chair"
+            />
+            <div class="country-box">
+                <h3>Pakistan</h3>
+                <ul class="country-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><strong>Location</strong>- Arabian Sea on the South and Gulf of Oman on the West</span>
+                  </li>
+                  <li>
+                    <span><strong>Leader</strong>- Asif Ali Zardari </span>
+                  </li>
+                  <li>
+                    <span><strong>Capital</strong>- Islamabad</span>
+                  </li>
+                  <li>
+                    <span><strong>Tourist Spots</strong>- Deosai National Park, Swat Valley, Badshahi Mosque</span>
+                  </li>
+                </ul>
+                <div class="country-readmore">
+                  
+                  <a href="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\learnpage.html" target="_blank" class="btn btn--small">Read More</a>
+                </div>
+              </div>
+          </figure>
+
+          <figure class="country-card">
+            <img class="countryPicture"
+              src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\srilankaflag.jpg"
+              alt="Chair"
+            />
+            <div class="country-box">
+                <h3>Sri Lanka</h3>
+                <ul class="country-details">
+                  <li>
+                    <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                    <span><strong>Location</strong>- lies in the Indian Ocean and seperated from India by the palk strait</span>
+                  </li>
+                  <li>
+                    <span><strong>Leader</strong>- Ranil Wickremesinghe</span>
+                  </li>
+                  <li>
+                    <span><strong>Capital</strong>- Colombo</span>
+                  </li>
+                  <li>
+                    <span><strong>Tourist Spots</strong>- Sigiriya, Sacred Tooth Relic, Polonnaruwa</span>
+                  </li>
+                </ul>
+                <div class="country-readmore">
+                  
+                  <a href="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\learnpage.html" target="_blank" class="btn btn--small">Read More</a>
+                </div>
+              </div>
+          </figure>
+        </div>
+      </section>
+
+      
+    </div>
+    <footer class="footer">
+        <div class="container grid grid--footer">
+          <div class="logo-col">
+            <a href="#" class="footer-logo">
+              <img class="logo" alt="SACC logo" src="C:\Users\Ayush Mehrotra\Desktop\southasiancountries\logo.png" />
+            </a>
+  
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
+  
+            <p class="copyright">
+              Copyright &copy; 2024 by South Asia Country Corporation, Inc. All rights reserved.
+            </p>
+          </div>
+
+          <nav class="nav-col">
+            <p class="footer-heading">Account</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#" style="white-space: nowrap;" >Create account</a></li>
+              <li><a class="footer-link" href="#">Sign in</a></li>
+              <li><a class="footer-link" href="#">iOS app</a></li>
+              <li><a class="footer-link" href="#">Android app</a></li>
+            </ul>
+          </nav>
+  
+          <nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">About SACC</a></li>
+              <li><a class="footer-link" href="#">For Business</a></li>
+              <li><a class="footer-link" href="#">Country partners</a></li>
+              <li><a class="footer-link" href="#">Careers</a></li>
+            </ul>
+          </nav>
+  
+          <nav class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Country directory </a></li>
+              <li><a class="footer-link" href="#">Help center</a></li>
+              <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+  </body>
+</html>
